@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Greet = (props) => {
+  const {name, heroName} = props
   return (
     <div>
       <h1>
-        Hello {props.name} aka {props.heroName}
+        Hello {name} aka {heroName}
       </h1>
-      {props.children}
     </div>
   );
 };
